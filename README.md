@@ -5,3 +5,6 @@
 ***********************          GitHub: jbNype           **********************
 ***********************     http://justinbauer.design     **********************
 ********************************************************************************
+
+1. Create basic mathematical functions: add, substract, divide, multiply. 
+2. Create HTML file and build calculator interface. 

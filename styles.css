@@ -1,0 +1,118 @@
+@font-face{ font-family: 'digital-7'; src: url('digital-7.woff') format('woff'), url('digital-7.ttf') format('truetype')}
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap'); */
+
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 98vh;
+    background:#333333;
+    font-family: 'Pt Mono', sans-serif;
+    font-size:10px;
+    text-align: center;
+}
+h1{
+    width: 100%;
+    color: #fff;
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    letter-spacing: 10px;
+}
+.container {
+    display: grid;
+    width: 500px;
+    height: 550px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+/* Calculator */
+.display{
+    display:table;
+    text-align: right;
+    height: 100px;
+    padding: 22px;
+    grid-area: 1 / 1 / 2 / 6;
+    background: #ffffff;    
+    border-radius: 24px 24px 8px 8px;
+}
+.total{
+    display:table-cell;
+    vertical-align: middle;    
+    letter-spacing: 2px;
+    font-family: 'digital-7', monospace;
+    font-size: 6.5em;
+    color: #222222;
+}
+button{
+    font-size:32px;
+    font-weight: 400;
+    border:  0px;
+    border-radius: 8px;
+    padding: 0;
+}
+button:focus{
+    outline: none;
+}
+.num {
+    background: #222222;
+    color:#ffffff;
+}
+.num:hover{
+    background:#0066ff;
+}
+.maths{
+    background-color: #666666;
+    color: #ffffff;
+    font-size: 42px;
+}
+.maths:hover{
+    background:#0066ff;
+}
+/* first row */
+.n7 { grid-area: 2 / 1 / 3 / 2; }
+.n8 { grid-area: 2 / 2 / 3 / 3; }
+.n9 { grid-area: 2 / 3 / 3 / 4; }
+.times { grid-area: 2 / 4 / 3 / 5; }
+.reset { 
+    grid-area: 2 / 5 / 3 / 6; 
+    background:#ff9900;
+    color: #222222;
+}
+.reset:hover{
+    color:#ffffff;
+    background:#0066ff;
+}
+/* second row */
+.n4 { grid-area: 3 / 1 / 4 / 2; }
+.n5 { grid-area: 3 / 2 / 4 / 3; }
+.n6 { grid-area: 3 / 3 / 4 / 4; }
+.minus { grid-area: 3 / 4 / 4 / 5; }
+.divide { grid-area: 3 / 5 / 4 / 6;  }
+/* third row */
+.n1 { grid-area: 4 / 1 / 5 / 2; }
+.n2 { grid-area: 4 / 2 / 5 / 3; }
+.n3 { grid-area: 4 / 3 / 5 / 4; }
+.n0 { 
+    grid-area: 5 / 1 / 6 / 3; 
+    border-radius: 8px 8px 8px 24px;
+}
+.dot { grid-area: 5 / 3 / 6 / 4; }
+/* four row */
+.plus { grid-area: 4 / 4 / 6 / 5; }
+.equal{ 
+    grid-area: 4 / 5 / 6 / 6; 
+    background: #ffffff;
+    font-size: 42px;
+    border-radius: 8px 8px 24px 8px;
+}
+.equal:hover{
+    color: #ffffff;
+    background: #0066ff;
+}
+/* 
+    
