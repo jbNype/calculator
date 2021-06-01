@@ -31,7 +31,7 @@ h1{
 }
 
 /* Calculator */
-.display{
+.display-container{
     display:table;
     text-align: right;
     height: 100px;
@@ -40,7 +40,7 @@ h1{
     background: #ffffff;    
     border-radius: 24px 24px 8px 8px;
 }
-.total{
+.display{
     display:table-cell;
     vertical-align: middle;    
     letter-spacing: 2px;
@@ -77,7 +77,7 @@ button:focus{
 .n7 { grid-area: 2 / 1 / 3 / 2; }
 .n8 { grid-area: 2 / 2 / 3 / 3; }
 .n9 { grid-area: 2 / 3 / 3 / 4; }
-.times { grid-area: 2 / 4 / 3 / 5; }
+.multiply { grid-area: 2 / 4 / 3 / 5; }
 .reset { 
     grid-area: 2 / 5 / 3 / 6; 
     background:#ff9900;
@@ -91,7 +91,7 @@ button:focus{
 .n4 { grid-area: 3 / 1 / 4 / 2; }
 .n5 { grid-area: 3 / 2 / 4 / 3; }
 .n6 { grid-area: 3 / 3 / 4 / 4; }
-.minus { grid-area: 3 / 4 / 4 / 5; }
+.subtract { grid-area: 3 / 4 / 4 / 5; }
 .divide { grid-area: 3 / 5 / 4 / 6;  }
 /* third row */
 .n1 { grid-area: 4 / 1 / 5 / 2; }
@@ -103,7 +103,7 @@ button:focus{
 }
 .dot { grid-area: 5 / 3 / 6 / 4; }
 /* four row */
-.plus { grid-area: 4 / 4 / 6 / 5; }
+.add { grid-area: 4 / 4 / 6 / 5; }
 .equal{ 
     grid-area: 4 / 5 / 6 / 6; 
     background: #ffffff;
